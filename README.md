@@ -4,7 +4,7 @@ Powershell script to turn md files into txt files
 ## 
 1. Open terminal
 2. Navigate to directory with md files
-3. Copy and paste powershell script. The script puts the .txt files in `C:\users\<current users>` directory. It catches errors and skips files if the conversion takes 5 seconds.
+3. Copy and paste powershell script. On a windows machine, the script puts the .txt files in `C:\users\<current users>` directory. The scripts handles errors and skips files if the conversion takes 5 seconds. It has a progress bar that shows the progress of the conversion. 
 
 ```powershell
 $markdownFiles = Get-ChildItem -Filter "*.md"
